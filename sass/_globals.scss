@@ -17,12 +17,12 @@ a {
 }
 
 .container {
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
     
     @include breakpoint-up(medium) {
-        padding-left: 84px;        
-        padding-right: 84px;        
+        margin-left: 84px;        
+        margin-right: 84px;        
     }
 }
 
