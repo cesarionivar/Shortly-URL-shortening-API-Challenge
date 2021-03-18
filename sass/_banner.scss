@@ -1,0 +1,50 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+
+    @include breakpoint-up(medium) {
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    &__image {
+
+        @include breakpoint-up(medium) {
+            right: -100px;
+        }
+    }
+
+    &__info {
+        margin-top: 30px;
+        h2 {
+            font-size: 34px;
+            line-height: 1;
+            margin-bottom: 15px;
+
+            @include breakpoint-up(medium) {
+                font-size: 60px;
+            }
+        }
+
+
+        p {
+            font-size: 13px;
+            color: $grayishViolet;
+            margin-bottom: 20px;
+
+            @include breakpoint-up(medium) {
+                font-size: 18px;
+            }
+        }
+
+        .boton {
+            padding: 10px 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
