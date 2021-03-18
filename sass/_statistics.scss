@@ -1,6 +1,98 @@
 .statistics {
     background-color: #eee;
     padding-top: 150px;
+    padding-bottom: 70px;
     margin-top: -70px;
     z-index: 995;
+    text-align: center;
+
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: $grayishViolet;
+
+        @include breakpoint-up(medium) {
+            margin: 10px auto;
+        }
+
+    }
+
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+
+        .category {
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 100px;
+            background-color: $white;
+
+            @include breakpoint-up(medium) {
+                padding: 5px;
+            }
+
+            &:first-of-type {
+                margin-top: 30px;
+                @include breakpoint-up(medium) {
+                    margin-top: 30px;
+                }
+            }
+
+            &:last-of-type {
+                @include breakpoint-up(medium) {
+                    margin-top: 150px;
+                }
+            }
+
+            &__photo {
+                position: relative;
+                top: -58px;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 100%;
+                background-color: $veryDarkBlue;
+
+                @include breakpoint-up(medium) {
+                    top: -38px;
+                    left: -130px;
+                }
+
+            }
+
+            &:not(:last-of-type)::after {
+                content: '';
+                width: 6px;
+                height: 87px;
+                background-color: #2acfcf;
+                display: block; 
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                transform-origin: bottom;
+                margin-top: 20px;
+
+                @include breakpoint-up(medium) {
+                    display: none;
+                }
+
+            }
+
+            &:not(:first-of-type) {
+
+                @include breakpoint-up(medium) {
+                    margin-left: 30px;
+                }
+            }
+
+
+        }
+    }
+    
+
 }
