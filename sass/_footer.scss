@@ -1,0 +1,51 @@
+.footer {
+    background-color: #232027;
+    color: $white;
+    text-align: center;
+    padding: 40px 0px;
+
+    .logo img {
+        width: 100px;
+        margin-bottom: 20px;
+    }   
+
+    h3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    ul li a {
+        list-style: none;
+        font-size: 13px;
+        color: $grayishViolet;
+    }
+
+    .sociales {
+        margin-top: 40px;
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+
+                &:not(:first-of-type) {
+                    margin-left: 20px;
+                }
+
+            }
+        }
+    }
+
+}
+
+.attribution { 
+    background-color: #000;
+    color: $white;
+    font-size: 11px; 
+    text-align: center; 
+    padding: 10px 70px;
+}
+.attribution a { 
+    color: $cyan;
+}
