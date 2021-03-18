@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/style.min.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,12 +13,55 @@
 </head>
 <body>
 
-  Features
-  Pricing
-  Resources
+  <header class="header container">
 
-  Login
-  Sign Up
+    <div class="header__menu-mobile">
+      <div class="header__logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="header__hamburguer" id="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="header__menu-mobile-items none">
+      <nav>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+      </nav>
+      <span></span>
+      <div class="login">
+        <a href="#">Login</a>
+        <a href="#" class="boton">Sign Up</a>
+      </div>      
+    </div>
+
+    <div class="header__menu-desktop">
+      <div class="menu">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="Logo">
+        </div>
+        <nav>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </nav>
+      </div>
+      <div class="header__login">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+
+
+  </header>
+
+  
+  
+  
 
   More than just shorter links
 
@@ -81,5 +121,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Cesario Nivar</a>.
   </div>
+  <script src="./js/app.js"></script>
 </body>
 </html>
