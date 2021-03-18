@@ -1,0 +1,22 @@
+.boost {
+    background-color: $darkViolet;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    padding: 60px 0px;
+    text-align: center;
+    color: $white;
+    font-size: 15px;
+
+    @include breakpoint-up(medium) {
+        background-image: url('../images/bg-boost-desktop.svg');
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    .boton {
+        padding: 10px 20px;
+    }
+
+}
